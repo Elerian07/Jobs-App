@@ -1,0 +1,12 @@
+import authRouter from './auth/auth.router.js'
+import jobsRouter from './jobs/jobs.router.js'
+import userRouter from './user/user.router.js'
+
+
+
+
+export {
+    authRouter,
+    jobsRouter,
+    userRouter
+}

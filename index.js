@@ -27,6 +27,9 @@ if (process.env.ENV == "dev") {
     app.use(morgan("COMMON"))
 }
 //Setup API Routing 
+app.get("/", (req, res) => {
+    res.send("<h1>Home Page</h1 > <br> <h5>By Mohamed Elerian</h5>")
+})
 app.use(`${baseUrl}/auth`, indexRouter.authRouter)
 app.use(`${baseUrl}/user`, indexRouter.userRouter)
 app.use(`${baseUrl}/jobs`, indexRouter.jobsRouter)
